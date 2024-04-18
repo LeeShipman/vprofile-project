@@ -2,7 +2,7 @@ version: '3.8'
 services:
   vprodb:
     build:
-      context: .Docker-files/db
+      context: ./Docker-files/db
     image: leeshipman/vprofiledb
     container_name: vprodb
     ports:
@@ -27,7 +27,7 @@ services:
 
   vproapp:
     build:
-      context: .Docker-files/app
+      context: ./Docker-files/app
     image: leeshipman/vprofileapp
     container_name: vproapp
     ports:
@@ -37,7 +37,7 @@ services:
     
   vproweb:
     build:
-      context: .Docker-files/web
+      context: ./Docker-files/web
     image: leeshipman/vprofileweb
     container_name: vproweb
     ports:
